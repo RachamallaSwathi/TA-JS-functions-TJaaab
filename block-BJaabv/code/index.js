@@ -175,7 +175,7 @@ function min() {
 
 min(0, 10);
 min(0, -10);
-}
+
 
 min(0, 10);
 min(0, -10);
@@ -188,4 +188,4 @@ function typeCheck() {
   // Your code goes here
   return typeof a;
 }
-}
+
