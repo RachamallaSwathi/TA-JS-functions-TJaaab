@@ -13,6 +13,9 @@ minToSec(2) ➞ 120
 // - Write a Function Decleration for above problem
 function minToSec() {
   // Your code
+  return min*60;
+
+
 }
 // - Execute the function with required parameter
 
@@ -28,6 +31,12 @@ isInRange(1, 10, 19); // false
 // - Write a Function Decleration for above problem
 function isInRange() {
   // Your code
+  if(number>lower && number<upper){
+    return `true`;
+  }
+  else{
+    return `false`;
+  }
 }
 // - Execute the function with required parameter
 
@@ -51,6 +60,22 @@ Obese: BMI is 30 or more
 
 function calculateBMI() {
   // Your code
+  let BMI=weight/(height*height);
+if(BMI<19.5)
+{
+  return `Underweight`;
+}
+else if(BMI>18.5 && BMI <24.9)
+{
+  return `Normal Weight`;
+}
+else if(BMI>25 && BMI <29.9)
+{
+  return `Over Weight`;
+}
+else{
+  return `obese`;
+}
 }
 
 /* 3. appropiateDrinks
@@ -66,6 +91,22 @@ Create a function that take the age are return the appropiate drink based on the
 
 function appropiateDrinks() {
   // Your code
+  if(age>21)
+{
+  return `drink throat-piercing vodka`;
+}
+else if(age<14)
+{
+  return `drink fruit juice`; 
+}
+else if(age<18)
+{
+  return `drink drink soda`; 
+}
+else{
+  return `none`;
+}
+
 }
 
 /* 4. Add two numers or string
@@ -81,6 +122,18 @@ Twist is when user passes anything other than number, or string value you should
 
 function sum() {
   // Your code
+  let sum=0;
+  if(typeof num1==='number' && typeof num2==='number')
+  {
+    return num1+num2;
+  }
+  else if(typeof num1==='string' && typeof num2 ==='string')
+  {
+    return `${num1} ${num2}`;
+  }
+  else{
+    return `Enter valid values`;
+  }
 }
 
 // Function Test
